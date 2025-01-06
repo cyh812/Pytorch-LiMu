@@ -48,3 +48,6 @@ d2l.train_ch3(net, train_iter, test_iter, loss, num_epochs, trainer)
 - trainer: 优化器
 
 > 问题在于d2l版本不对会无法正常运行，要从d2l.train_ch3改为train_ch3，但是这样一来又会报错train_ch3内部调用的相关函数缺乏定义，得一个个找到定义放到前面完成编译才能成功运行。这么一来的话...性价比不高
+
+### train_iter, test_iter = d2l.load_data_fashion_mnist(batch_size) 
+读取mnist数据集
